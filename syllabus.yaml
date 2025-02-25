@@ -23,3 +23,6 @@
 3. Configuring tsconfig.json
 4. Compiling TypeScript
 (INFO: First create a new file app.ts then run this command in terminal: (tsc app.ts) that will create a new file app.js so now when you write the code in .ts file and then the typescript will compile the code into that file .js file. Now configure tsconfig.json file just run this command in terminal: (tsc --init). If you don't want to run this command again & again to compile the TypeScript code (tsc app.ts) then use this commadn instead (tsc --watch) that will compile the code automatically when you make the change in .ts file)
+
+
+# Introduction to Basic Types
