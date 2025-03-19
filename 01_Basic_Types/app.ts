@@ -37,7 +37,7 @@ d = "rafay";
 // NOTE: what is the differnce between any and unknown. so actually the any code fails the 12 and when we say like e. then we get all the method related to string if you do it unknown you ca use any value but you have to use it specifecialy like first you have to check that the typeof d = string then do this you have to check again and again for unknown
 
 // Void (we use void when function doesn't return anything and if returning some datatype then you have to mention that)
-function abcd(): void {
+function abcde(): void {
     console.log('hey');
 }
 
@@ -57,5 +57,5 @@ function infiniteFun(): never {
         console.log("Infinite Loop");
     }
 }
-abcd();
+abcde();
 console.log("hey");

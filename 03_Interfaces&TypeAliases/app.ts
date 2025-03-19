@@ -3,7 +3,8 @@ interface User {
     name: string,
     email: string,
     password: number,
-    gender?: string // ? means optional
+    gender?: string,// ? means optional
+    id: number
 }
 
 function getDataOfUser(obj: User) {
@@ -12,7 +13,8 @@ function getDataOfUser(obj: User) {
 getDataOfUser({
     name: "abdul rafay",
     email: "newemail@gamil.com",
-    password: 1234
+    password: 1234,
+    id: 101
 })
 
 
