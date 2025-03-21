@@ -88,3 +88,28 @@ function logMessage(message) {
     console.log(message);
 }
 logMessage('Print this Message');
+// INFO: type inference
+let username = 'Rafay';
+// INFO: type assertions
+let someValue = "Hello World";
+let len = someValue.length;
+console.log(len);
+// INFO: union types
+let id; // id can ethier be string or number
+id = 'abc';
+id = 123;
+function printId(id) {
+    console.log(`id: ${id}`);
+}
+printId('Hi welcome!');
+printId(1234);
+// INFO: tpye narrowing
+function printIdFn(id) {
+    if (typeof id === 'string') {
+        console.log(`id is a string: ${id.toUpperCase()}`);
+    }
+    else {
+        console.log(`id is a number: ${id}`);
+    }
+}
+printIdFn(1);

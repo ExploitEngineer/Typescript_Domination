@@ -103,3 +103,33 @@ function logMessage(message: string): void {
     console.log(message);
 }
 logMessage('Print this Message');
+
+
+// INFO: type inference
+let username = 'Rafay';
+
+// INFO: type assertions
+let someValue: any = "Hello World";
+let len: number = (someValue as string).length;
+console.log(len);
+
+// INFO: union types
+let id: string | number; // id can ethier be string or number
+id = 'abc';
+id = 123;
+
+function printId(id: string | number): void {
+    console.log(`id: ${id}`);
+}
+printId('Hi welcome!');
+printId(1234);
+
+// INFO: tpye narrowing
+function printIdFn(id: string | number) {
+    if (typeof id === 'string') {
+        console.log(`id is a string: ${id.toUpperCase()}`);
+    } else {
+        console.log(`id is a number: ${id}`);
+    }
+}
+printIdFn(1);
