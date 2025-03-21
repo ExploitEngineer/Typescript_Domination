@@ -77,3 +77,29 @@ enum Size {
 }
 let size: Size = Size.Large;
 console.log(size);
+
+// INFO: unkown type
+let notSure: unknown = 'a';
+if (typeof (notSure) === 'number') {
+    notSure.toFixed(2);
+} else if (typeof (notSure) === 'string') {
+    notSure.length;
+}
+
+// INFO: never type
+function infiniteLoop(): never {
+    while (true) {
+        // Do something enlessly
+        console.log('Again!');
+    }
+}
+
+function throwError(message: string): never {
+    throw new Error(message);
+};
+
+// void type
+function logMessage(message: string): void {
+    console.log(message);
+}
+logMessage('Print this Message');
