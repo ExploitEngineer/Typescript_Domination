@@ -64,3 +64,27 @@ var Size;
 })(Size || (Size = {}));
 let size = Size.Large;
 console.log(size);
+// INFO: unkown type
+let notSure = 'a';
+if (typeof (notSure) === 'number') {
+    notSure.toFixed(2);
+}
+else if (typeof (notSure) === 'string') {
+    notSure.length;
+}
+// INFO: never type
+function infiniteLoop() {
+    while (true) {
+        // Do something enlessly
+        console.log('Again!');
+    }
+}
+function throwError(message) {
+    throw new Error(message);
+}
+;
+// void type
+function logMessage(message) {
+    console.log(message);
+}
+logMessage('Print this Message');
