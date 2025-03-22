@@ -133,3 +133,87 @@ function printIdFn(id: string | number) {
     }
 }
 printIdFn(1);
+
+// INFO: interface
+interface Person {
+    name: string;
+    age: number;
+    greet(): void;
+}
+
+let person: Person = {
+    name: 'abc',
+    age: 10,
+    greet() {
+        console.log('Hi');
+    }
+};
+
+person.greet();
+
+// INFO: Interface with function types
+interface MathOp {
+    (a: number, b: number): number;
+}
+
+const add: MathOp = (x, y) => x + y;
+const subtract: MathOp = (x, y) => x - y;
+
+console.log('add 2 numbers: ', add(1, 2));
+console.log('subtract 2 numbers: ', subtract(5, 4));
+
+
+// INFO: Type Alias
+// type AliasName = TypeDefinition; // syntax
+type UserID = string;
+
+let userId: UserID = 'abc';
+
+type Person2 = {
+    name: string;
+    age: number;
+};
+
+let person1: Person2 = {
+    name: 'abc',
+    age: 12
+}
+console.log(person1.name);
+
+type ID = string | number;
+
+let userId1: ID = 'abc';
+let orderId: ID = 101;
+
+
+// INFO: Interface vs Type alias
+interface User {
+    name: string;
+    phone: number;
+}
+
+interface Customer extends User {
+    address: string;
+}
+
+let myCustomer: Customer = {
+    name: 'x',
+    phone: 1234,
+    address: 'abc'
+}
+
+type Vehicle = {
+    name: string;
+    model: string;
+}
+
+// & -> intersectoins types
+type Car = Vehicle & {
+    isElectric: boolean;
+}
+
+let myCar: Car = {
+    name: 'BMW',
+    model: "don't know",
+    isElectric: true
+}
