@@ -217,3 +217,35 @@ let myCar: Car = {
     model: "don't know",
     isElectric: true
 }
+
+type MathOp1 = (a: number, b: number) => number;
+let add1: MathOp1 = (x, y) => x + y;
+console.log(add1(2, 2));
+
+type Status = "active" | "inactive" | "pending";
+
+let userStatus: Status = 'active';
+
+type Tree = {
+    value: string;
+    children: Tree[];
+}
+
+let tree: Tree = {
+    value: 'root',
+    children: [
+        {
+            value: 'child1',
+            children: [{ value: 'grandChild', children: [] }]
+        }
+    ]
+}
+
+// INFO: intersetion types
+let config: { server: string; port: number } & { secure: boolean; timeout: number } = {
+    server: 'localhost',
+    port: 8000,
+    secure: true,
+    timeout: 5000
+};
+

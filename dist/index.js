@@ -143,3 +143,5 @@ let myCar = {
     model: "don't know",
     isElectric: true
 };
+let add1 = (x, y) => x + y;
+console.log(add1(2, 2));
