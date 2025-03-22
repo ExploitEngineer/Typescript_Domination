@@ -113,3 +113,33 @@ function printIdFn(id) {
     }
 }
 printIdFn(1);
+let person = {
+    name: 'abc',
+    age: 10,
+    greet() {
+        console.log('Hi');
+    }
+};
+person.greet();
+const add = (x, y) => x + y;
+const subtract = (x, y) => x - y;
+console.log('add 2 numbers: ', add(1, 2));
+console.log('subtract 2 numbers: ', subtract(5, 4));
+let userId = 'abc';
+let person1 = {
+    name: 'abc',
+    age: 12
+};
+console.log(person1.name);
+let userId1 = 'abc';
+let orderId = 101;
+let myCustomer = {
+    name: 'x',
+    phone: 1234,
+    address: 'abc'
+};
+let myCar = {
+    name: 'BMW',
+    model: "don't know",
+    isElectric: true
+};
