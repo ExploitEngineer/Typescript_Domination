@@ -189,7 +189,7 @@ let orderId: ID = 101;
 // INFO: Interface vs Type alias
 interface User {
     name: string;
-    phone: number;
+    phone?: number;
 }
 
 interface Customer extends User {
@@ -248,4 +248,3 @@ let config: { server: string; port: number } & { secure: boolean; timeout: numbe
     secure: true,
     timeout: 5000
 };
-

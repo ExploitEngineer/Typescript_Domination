@@ -145,3 +145,20 @@ let myCar = {
 };
 let add1 = (x, y) => x + y;
 console.log(add1(2, 2));
+let userStatus = 'active';
+let tree = {
+    value: 'root',
+    children: [
+        {
+            value: 'child1',
+            children: [{ value: 'grandChild', children: [] }]
+        }
+    ]
+};
+// INFO: intersetion types
+let config = {
+    server: 'localhost',
+    port: 8000,
+    secure: true,
+    timeout: 5000
+};
