@@ -1,0 +1,26 @@
+1. What is TypeScript ?
+TypeScript is a programming language developed and maintained by Microsoft. It is a superset of JavaScript, meaning any valid JavaScript code is also a valid TypeScript code - but TypeScript adds optional static Typing interfaces, and advanced tooling features.
+
+2. Why use TypeScript over JavaScript ?
+TypeScript ia an open-source programming language developed by Microsoft. It is a superset of JavaScript that adds optional static typing and compiles to plain JavaScript, enabling improved code quality, maintainability, and tooling support in modern web and software development.
+
+3. TypeScript vs JavaScript
+TypeScript is a superset of JavaScript that adds optional static typing, allowing developers to define variable types and catch errors during development. It requires a compilation step to convert TypeScript code into standard JavaScript, which browsers can run.
+
+JavaScript is a dynamic, interpreted programming language used primarily for web development. It does not include built-in static type checking and is executed directly by browsers or runtime environments like Node.js.
+
+4. What is tsc ?
+tsc stands for TypeScript Compiler. It's the tool that transpiles .ts files into .js files, which browser or Node.js can understand.
+
+Install TypeScript
+- npm install -g typescript
+- tsc --version
+- cd project
+- tsc --init
+
+5. What is tsconfig.json
+This file tells the TypeScript compiler how to compile your project. It controls options like:
+- which files to include/exclude
+- What ECMAScript version to output
+- Module system (CommonJS, ESNext, etc.)
+- Whether to allow JS files, strict typing, etc.
