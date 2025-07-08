@@ -24,3 +24,9 @@ This file tells the TypeScript compiler how to compile your project. It controls
 - What ECMAScript version to output
 - Module system (CommonJS, ESNext, etc.)
 - Whether to allow JS files, strict typing, etc.
+
+6. Compiling TypeScript Files
+- tsc
+
+to automatically recompile when you change .ts files
+- tsc --watch
