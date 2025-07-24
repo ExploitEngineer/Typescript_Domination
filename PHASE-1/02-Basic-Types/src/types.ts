@@ -80,7 +80,7 @@ class Car {
   }
 }
 
-// Enum - Enums is not a type-level extension of JavaScript. It allows a developer to define a set of named constants. Using enums can make it easier to document intent, or create a set of distint cases. TypeScript provides both numeric and string-based enums.
+// Enum - Enums is not a type-level extension of JavaScript. It allows a developer to define a set of named constants. Using enums can make it easier to document intent, or create a set of distint cases. TypeScript provides both numeric and string-based enums. Enums lets you define a set of named constants, used for finite, known choices.
 enum Direction {
   Up = 1,
   Down,
