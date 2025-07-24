@@ -5,10 +5,8 @@ node_modules/
 
 # === Build Output ===
 dist/
-build/
 out/
 **/dist/
-**/build/
 **/out/
 
 # === TypeScript ===
