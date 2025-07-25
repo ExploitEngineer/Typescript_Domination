@@ -53,3 +53,43 @@ const addAll = (a: number, b: number, c?: number): number => {
   }
   return a + b;
 };
+
+const sumAll = (a: number = 2, b: number, c: number = 2): number => {
+  return a + b + c;
+};
+
+logMsg(addAll(2, 3, 2));
+logMsg(addAll(2, 3));
+logMsg(sumAll(2, 3));
+logMsg(sumAll(undefined, 3));
+
+// Rest Parameters
+const total = (a: number, ...nums: number[]): number => {
+  return a + nums.reduce((prev, current) => prev + current);
+};
+
+logMsg(total(10, 2, 3));
+
+const createError = (errMsg: string): never => {
+  throw new Error(errMsg);
+};
+
+const infinite = () => {
+  let i: number = 1;
+  while (true) {
+    i++;
+    if (i > 100) break;
+  }
+};
+
+// custom type guard
+const isNumber = (value: any): boolean => {
+  return typeof value === "number" ? true : false;
+};
+
+// use of the never type
+const numberOrString = (value: number | string): string => {
+  if (typeof value === "string") return "string";
+  if (isNumber(value)) return "number";
+  return createError("This should never happen!");
+};
