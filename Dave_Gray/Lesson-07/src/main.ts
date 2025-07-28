@@ -39,3 +39,34 @@ console.log(todaysNet(todaysTransaction));
 // todaysTransaction.Pizza = 40
 
 console.log(todaysTransaction["Dave"]);
+
+////////////////////////////////////////////////////
+
+interface Student {
+  // [key: string]: string | number | number[] | undefined;
+  name: string;
+  GPA: number;
+  Classes?: number[];
+}
+
+const student: Student = {
+  name: "Doug",
+  GPA: 3.5,
+  Classes: [100, 200],
+};
+
+// console.log(student.test);
+
+for (const key in student) {
+  console.log(`${key}: ${student[key as keyof Student]}`);
+}
+
+Object.keys(student).map(function (key) {
+  console.log(student[key as keyof typeof student]);
+});
+
+const logStudentKey = (student: Student, key: keyof Student): void => {
+  console.log(`Student ${key}: ${student[key]}`);
+};
+
+logStudentKey(student, "GPA");
