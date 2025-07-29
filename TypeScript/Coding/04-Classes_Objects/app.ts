@@ -24,3 +24,22 @@ class MetalBottleMaker extends BottleMaker {
 }
 
 let b1 = new BottleMaker("Milton");
+
+// Getters and Setters
+class User {
+  constructor(
+    public _name: string,
+    public _age: number,
+  ) {}
+
+  get name() {
+    return this._name;
+  }
+
+  set name(value: string) {
+    this._name = value;
+  }
+}
+
+let user = new User("abdul rafay", 17);
+user.name = "whoami";
