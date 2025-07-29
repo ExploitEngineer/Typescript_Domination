@@ -43,3 +43,15 @@ class User {
 
 let user = new User("abdul rafay", 17);
 user.name = "whoami";
+
+// Static Methods
+class Sherry {
+  public static version: number = 1.0;
+
+  static getRandomNumber() {
+    return Math.random();
+  }
+}
+
+Sherry.version;
+Sherry.getRandomNumber();
