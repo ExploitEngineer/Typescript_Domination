@@ -2,7 +2,10 @@
 class BottleMaker {
   private halua: string = "halua";
   protected age: number = 10;
-  constructor(public name: string) {}
+  constructor(
+    public name: string,
+    public readonly greet?: string,
+  ) {}
 
   getData(): void {
     console.log(this.halua);
@@ -10,8 +13,8 @@ class BottleMaker {
 }
 
 class MetalBottleMaker extends BottleMaker {
-  constructor(name: string) {
-    super(name);
+  constructor(name: string, greet: string) {
+    super(name, greet);
   }
 
   getValue(): void {
